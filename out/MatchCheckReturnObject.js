@@ -9,4 +9,6 @@ var ReturnObject = /** @class */ (function () {
     }
     return ReturnObject;
 }());
+FailReason;
+ReturnObject;
 //# sourceMappingURL=MatchCheckReturnObject.js.map
