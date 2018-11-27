@@ -5,6 +5,12 @@ var Match = /** @class */ (function () {
         this.players = players;
         return;
     }
+    Match.prototype.isGoodMatch = function (rank, range) {
+        var lowest = this.averageRank - range;
+        var highest = this.averageRank + range;
+        if (rank >= lowest && rank <= highest) { // Match works
+        }
+    };
     return Match;
 }());
 exports.Match = Match;
