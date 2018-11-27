@@ -1,17 +1,13 @@
 {
-    "compilerOptions": {
-        "noImplicitAny": true,
-        "preserveConstEnums": true,
-        "sourceMap": true,
-        "types": [ "express" ],
-		    "target": "es5",
-        "outDir": "out/",
-        "moduleResolution": "node"
-    },
-    "include": [
-        "src/*"
-    ],
-    "exclude": [
-        "node_modules"
-    ]
+  "compilerOptions": {
+    "noImplicitAny": true,
+    "preserveConstEnums": true,
+    "sourceMap": true,
+    "types": ["express"],
+    "target": "es5",
+    "outDir": "out/",
+    "moduleResolution": "node"
+  },
+  "include": ["src/*"],
+  "exclude": ["node_modules"]
 }
