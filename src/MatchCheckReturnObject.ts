@@ -5,6 +5,9 @@ enum FailReason {
 }
 
 class ReturnObject {
-  constructor(public readonly success: boolean, reason?: FailReason = FailReason.Other)
+  constructor(
+    public readonly success: boolean,
+    reason?: FailReason = FailReason.Other
+  );
 }
-export { FailReason, ReturnObject as MatchCheckReturnObject }
+export { FailReason, ReturnObject as MatchCheckReturnObject };
