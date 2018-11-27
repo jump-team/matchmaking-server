@@ -1,6 +1,6 @@
 class Match {
   constructor(public readonly players: number) {
-    return
+    return;
   }
 }
-export { Match }
+export { Match };
