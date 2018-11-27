@@ -6,9 +6,11 @@ var Match = /** @class */ (function () {
         return;
     }
     Match.prototype.isGoodMatch = function (rank, range) {
+        // Checks if a match is good for the specific rank
         var lowest = this.averageRank - range;
         var highest = this.averageRank + range;
-        if (rank >= lowest && rank <= highest) { // Match works
+        if (rank >= lowest && rank <= highest) {
+            // Match works
         }
     };
     return Match;
