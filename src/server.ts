@@ -11,7 +11,7 @@ let matches: Match[] = [];
 // http://expressjs.com/en/starter/basic-routing.html
 app.get("/", function(request: Request, response: Response) {
   response.status(200);
-  response.sendFile("/app/views/index.html");
+  response.sendFile('/app/views/index.html');
 });
 
 // listen for requests :)

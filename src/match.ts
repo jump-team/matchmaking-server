@@ -1,6 +1,6 @@
 import * as objectId from "bson-objectid";
 
-class Match {
+export class Match {
   private averageRank: number;
   constructor(public readonly players: number) {
     return;
@@ -14,4 +14,3 @@ class Match {
     }
   }
 }
-export { Match };
