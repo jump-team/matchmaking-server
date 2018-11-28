@@ -7,8 +7,8 @@ import * as expressHandlebars from "express-handlebars";
 let matches: Match[] = [];
 
 app.set("views", path.join(__dirname, "../views"));
-app.engine('handlebars', expressHandlebars());
-app.set('view engine', 'handlebars');
+app.engine("handlebars", expressHandlebars());
+app.set("view engine", "handlebars");
 
 app.get("/", function(request: Request, response: Response) {
   response.status(200);
