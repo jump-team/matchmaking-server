@@ -1,6 +1,6 @@
 # Matchmaking Server
 
-<a href="https://glitch.com/edit/#!/remix/matchmaking-server"><img alt="Remix on Glitch" src="https://cdn.gomix.com/f3620a78-0ad3-4f81-a271-c8a4faa20f86%2Fremix-button.svg"></a>
+[![Remix on Glitch](https://cdn.glitch.com/2703baf2-b643-4da7-ab91-7ee2a2d00b5b%2Fremix-button.svg)](https://glitch.com/edit/#!/remix/matchmaking-server)
 
 A server for doing matchmaking. Made for Jump on Roblox.
 
