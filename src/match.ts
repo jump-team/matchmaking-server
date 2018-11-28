@@ -1,6 +1,9 @@
+import * from "bson-objectid";
+
 class Match {
   private averageRank: number;
   constructor(public readonly players: number) {
+    
     return;
   }
   public isGoodMatch(rank: number, range: number) {

@@ -7,6 +7,7 @@ enum FailReason {
 class ReturnObject {
   constructor(
     public readonly success: boolean,
+    public readonly matchId: string,
     reason?: FailReason = FailReason.Other
   );
 }

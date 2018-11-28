@@ -3,7 +3,7 @@
 import * as express from "express";
 const app = express();
 import { Match } from "./match";
-import * from "./MatchCheckReturnObject";
+import { FailReason, MatchCheckReturnObject } from "./MatchCheckReturnObject";
 let matches: Match[] = [];
 // we've started you off with Express,
 // but feel free to use whatever libs or frameworks you'd like through `package.json`.
