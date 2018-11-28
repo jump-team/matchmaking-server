@@ -11,5 +11,5 @@ class ReturnObject {
     reason?: FailReason = FailReason.Other
   );
 }
-export FailReason;
+export FailReason as FailReason;
 export ReturnObject as MatchCheckReturnObject;

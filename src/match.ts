@@ -1,4 +1,4 @@
-import * from "bson-objectid";
+import * as objectId from "bson-objectid";
 
 class Match {
   private averageRank: number;
