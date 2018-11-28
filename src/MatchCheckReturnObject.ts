@@ -3,7 +3,7 @@ enum FailReason {
   RankHigh,
   Other
 }
-
+export FailReason as FailReason;
 class ReturnObject {
   constructor(
     public readonly success: boolean,
@@ -11,5 +11,4 @@ class ReturnObject {
     reason?: FailReason = FailReason.Other
   );
 }
-export FailReason as FailReason;
 export ReturnObject as MatchCheckReturnObject;
