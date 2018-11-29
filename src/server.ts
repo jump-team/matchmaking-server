@@ -6,7 +6,7 @@ import * as path from "path";
 import * as expressHandlebars from "express-handlebars";
 import * as bodyParser from "body-parser";
 import { Player } from "./player";
-let matchTypes: array[] = [ Standard: [], Pro: [], 50Player: [] ];
+let matchTypes: object = { Standard: [], Pro: [], Mega: [] };
 
 app.use(bodyParser.json());
 app.set("views", path.join(__dirname, "../views"));
@@ -25,7 +25,6 @@ app.get("/ping", function(request: Request, response: Response) {
 
 app.post("/findmatch", function(request: Request, response: Response) {
   const info = request.body;
-  
 }):
 
 const listener = app.listen(process.env.PORT, function() {

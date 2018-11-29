@@ -4,6 +4,12 @@ import {
   FailReason
 } from "MatchCheckReturnObject";
 
+export enum MatchType {
+  Standard,
+  Pro,
+  Mega
+}
+
 export class Match {
   private averageRank: number;
   public readonly id: string;
@@ -33,4 +39,15 @@ export class Match {
 
 export class NormalMatch extends Match {
   maxPlayers = 12;
+  public readonly matchType: MatchType = MatchType.Standard;
+}
+
+export class ProMatch extends Match {
+  maxPlayers = 12;
+  public readonly matchType: MatchType = MatchType.Pro;
+}
+
+export class MegaMatch extends Match {
+  maxPlayers = 50;
+  public readonly matchType: MatchType = MatchType.Mega;
 }
