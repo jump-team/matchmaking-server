@@ -1,4 +1,5 @@
 export enum FailReason {
+  MaxPlayersReached,
   RankLow,
   RankHigh,
   Other
@@ -6,7 +7,11 @@ export enum FailReason {
 export class MatchCheckReturnObject {
   constructor(
     public readonly success: boolean,
-    public readonly matchId: string,
-    reason?: FailReason = FailReason.Other
-  );
+    public readonly matchId?: string,
+    public readonly reason?: FailReason
+  ) {
+    if (!this.reason) {
+      this.reason = FailReason.Other;
+    }
+  }
 }
