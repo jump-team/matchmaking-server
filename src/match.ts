@@ -3,6 +3,7 @@ import {
   MatchCheckReturnObject as ReturnObject,
   FailReason
 } from "MatchCheckReturnObject";
+import { Player } from "./player";
 
 export enum MatchType {
   Standard,
@@ -14,7 +15,7 @@ export class Match {
   private averageRank: number;
   public readonly id: string;
   public readonly maxPlayers: number = 100;
-  constructor(public readonly players: array) {
+  constructor(public readonly players: Player[]) {
     this.id = objectId.generate();
   }
   public isGoodMatch(rank: number, range: number) {

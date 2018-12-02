@@ -23,7 +23,7 @@ app.get("/ping", function(request: Request, response: Response) {
   response.send("online");
 });
 
-app.post("/findmatch", function(request: Request, response: Response) {
+app.post("/:type/findmatch", function(request: Request, response: Response) {
   const info = request.body;
 }):
 
