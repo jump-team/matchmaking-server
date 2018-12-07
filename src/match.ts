@@ -2,7 +2,7 @@ import * as objectId from "bson-objectid";
 import {
   MatchCheckReturnObject as ReturnObject,
   FailReason
-} from "MatchCheckReturnObject";
+} from "./MatchCheckReturnObject";
 import { Player } from "./player";
 
 export enum MatchType {
@@ -22,9 +22,10 @@ export class Match {
     // Checks if a match is good for the specific rank
     let lowest: number = this.averageRank - range;
     let highest: number = this.averageRank + range;
+    let returnObject;
     if (rank >= lowest && rank <= highest && this.maxPlayers > players.length) {
       // Match works
-      const returnObject = new ReturnObject(true, this.id);
+      returnObject = new ReturnObject(true, this.id);
     } else {
       let returnObject;
       if (rank < lowest) {
@@ -33,8 +34,11 @@ export class Match {
         returnObject = new ReturnObject(false, FailReason.RankHigh);
       } else if (players.length > this.maxPlayers) {
         returnObject = new ReturnObject(false, FailReason.MaxPlayersReached);
+      } else {
+        returnObject = new ReturnObject(false, FailReason.Other);
       }
     }
+    return returnObject;
   }
 }
 

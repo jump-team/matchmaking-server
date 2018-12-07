@@ -10,7 +10,7 @@ export class MatchCheckReturnObject {
     public readonly matchId?: string,
     public readonly reason?: FailReason
   ) {
-    if (!this.reason) {
+    if (!this.reason && this.success === false) {
       this.reason = FailReason.Other;
     }
   }
