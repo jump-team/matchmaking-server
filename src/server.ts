@@ -42,7 +42,7 @@ app.post("/:type/findmatch", function(request: Request, response: Response) {
   } else {
     res.status(404).json({ match_found: false, retry: true });
   }
-}):
+});
 
 const listener = app.listen(process.env.PORT, function() {
   console.log("Your app is listening on port " + listener.address().port);
