@@ -6,5 +6,5 @@
     "exclude": ["^out/"],
     "include": ["\\.js$", "\\.json"]
   },
-  "throttle": 50
+  "throttle": 100
 }
